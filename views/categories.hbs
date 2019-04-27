@@ -1,0 +1,21 @@
+<a href="/categories/create">add</a>
+<Table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name </th>
+			<th> Actions </th>
+		</tr>
+
+	</thead>
+	<tbody>
+		{{#each categories}}
+		<tr>
+			<td>{{this.id}}</td>
+			<td>{{this.name}} </td>
+			<td><a href="/categories/edit/{{id}}"> edit</a> </td>
+			<td><a> delete</a> </td>
+			{{/each}}
+
+	</tbody>
+</Table>
